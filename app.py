@@ -188,7 +188,8 @@ def login():
     print("E: ", email)
     print("p: ", password)
     checkExists = checkUserExists(email)
-    print(checkExists[0]["password"])
+
+    # print(checkExists[0]["password"])
     message = {}
 
     if checkExists == False:
@@ -207,7 +208,8 @@ def login():
                 message["key"] = "Error"
 
                 message["msg"] = "Incorrect password"
-
+    print("MSG")
+    print(message)
     if message:
         print(message)
         message = json.dumps(message)
