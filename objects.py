@@ -1,6 +1,6 @@
 import json
 
-# object of point with a name and address
+# object of user with name, email and password
 class User:
     def __init__(name, email, password):
         self.name = name
