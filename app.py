@@ -31,7 +31,7 @@ bcrypt = Bcrypt(app)
 
 
 client = pymongo.MongoClient(
-    "mongodb://tal2:tal2@cluster0-shard-00-00.t5lmh.mongodb.net:27017,cluster0-shard-00-01.t5lmh.mongodb.net:27017,cluster0-shard-00-02.t5lmh.mongodb.net:27017/<dbname>?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority"
+    "mongodb://<username>:<password>@cluster0-shard-00-00.t5lmh.mongodb.net:27017,cluster0-shard-00-01.t5lmh.mongodb.net:27017,cluster0-shard-00-02.t5lmh.mongodb.net:27017/<dbname>?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority"
 )
 
 db = client["finance"]
